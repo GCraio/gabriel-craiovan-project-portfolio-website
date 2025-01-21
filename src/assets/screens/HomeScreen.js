@@ -19,23 +19,94 @@ function HomeScreen() {
           </button>
         </div>
       </header>
-      <section className="intro_section">
-        <p>Hello! Welcome to my portfolio website!</p>
-        <p>
-          I'm a Software Engineering student at the University of Calgary and
-          the founder of <strong>Romdova LTD</strong>. I'm passionate about
-          creating innovative software solutions that solve real-world problems
-          and leave a meaningful impact.
-        </p>
-        <img
-          className="HomeScreen_main_image"
-          src={require("../images/headshot.JPG")}
-          alt="Headshot"
-        />
+      <p className="intro_main_text">Hello! Welcome to my portfolio website!</p>
+      <section className="work_experiences_section">
+        <p className="main_title">ABOUT ME</p>
+        <article className="experience">
+          <div className="experience_header_info">
+            <img
+              className="HomeScreen_main_image"
+              src={require("../images/headshot.JPG")}
+              alt="Headshot"
+            />
+            <div className="experience_header_info_text_conatiner">
+              <p className="work_title">Gabriel Craiovan</p>
+              <p>
+                I'm a Software Engineering student at the University of Calgary
+                and the founder of <strong>Romdova LTD</strong>. I'm passionate
+                about creating innovative software solutions that solve
+                real-world problems and leave a meaningful impact.
+              </p>
+              <p className="work_title">Contact</p>
+              <p>
+                {" "}
+                <img
+                  className="icon_text"
+                  src={require("../icons/envelope.png")}
+                  alt="Headshot"
+                />
+                gabriel.const.craiovan@gmail.com
+              </p>
+              <p>
+                {" "}
+                <img
+                  className="icon_text"
+                  src={require("../icons/phone-flip.png")}
+                  alt="Headshot"
+                />
+                (403) 816-3118
+              </p>
+              <p>
+                <a
+                  href={
+                    "https://www.linkedin.com/in/gabriel-craiovan-011008241/"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/linkedin.png")}
+                    alt="Headshot"
+                  />
+                  Linkedin
+                </a>
+              </p>
+              <p>
+                <a
+                  href={"https://github.com/GCraio"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/github.png")}
+                    alt="Headshot"
+                  />
+                  Github Profile
+                </a>
+              </p>
+              <p>
+                <a
+                  href={"https://gabrielcra1225.wixsite.com/romdovaltd"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/url.png")}
+                    alt="Headshot"
+                  />
+                  Company Website
+                </a>
+              </p>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section className="work_experiences_section">
-        <p className="main_title">PROJECT PORTFOLIO</p>
+        <p className="main_title">PROJECTS</p>
 
         <article className="experience">
           {/* FIRST EXPERIENCE */}
@@ -49,6 +120,38 @@ function HomeScreen() {
               <p className="work_title">1. StudentSphere</p>
               <p>Sole Creator</p>
               <p>March 2024 – December 2024</p>
+              <p>
+                <a
+                  href={
+                    "https://apps.apple.com/ca/app/studentsphere/id6737998362"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/app-store.png")}
+                    alt="Headshot"
+                  />
+                  Apple Store
+                </a>
+              </p>
+              <p>
+                <a
+                  href={
+                    "https://play.google.com/store/search?q=studentSphere&c=apps&hl=en_CA"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/playstore.png")}
+                    alt="Headshot"
+                  />
+                  Google Play Store
+                </a>
+              </p>
             </div>
           </div>
 
@@ -145,6 +248,36 @@ function HomeScreen() {
               <p className="work_title">2. RoPro</p>
               <p>Lead Software Developer</p>
               <p>May 2023 - December 2023</p>
+              <p>
+                <a
+                  href={"https://apps.apple.com/ca/app/ropro/id6450377614"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/app-store.png")}
+                    alt="Headshot"
+                  />
+                  Apple Store Url
+                </a>
+              </p>
+              <p>
+                <a
+                  href={
+                    "https://play.google.com/store/apps/details?id=com.gabwincalc.wincalc&hl=en_CA"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/playstore.png")}
+                    alt="Headshot"
+                  />
+                  Google Play Store
+                </a>
+              </p>
             </div>
           </div>
 
@@ -243,6 +376,20 @@ function HomeScreen() {
               <p className="work_title">3. Snipr-Buzz</p>
               <p>Sole Creator</p>
               <p>December 2024 – January 2025</p>
+              <p>
+                <a
+                  href={"https://barberappfirebase.web.app/home"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/url.png")}
+                    alt="Headshot"
+                  />
+                  Website Url
+                </a>
+              </p>
             </div>
           </div>
 
@@ -357,6 +504,20 @@ function HomeScreen() {
               <p className="work_title">4. ChatGPT AI ChatBot Messenger</p>
               <p>Sole Creator</p>
               <p>October 2024</p>
+              <p>
+                <a
+                  href={"https://github.com/GCraio/AISpeechProject"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/github.png")}
+                    alt="Headshot"
+                  />
+                  Github Repo
+                </a>
+              </p>
             </div>
           </div>
 
@@ -461,6 +622,20 @@ function HomeScreen() {
               <p className="work_title">1. Romdova LTD.</p>
               <p>Founder</p>
               <p>July 2024 - Present </p>
+              <p>
+                <a
+                  href={"https://www.linkedin.com/company/105600089/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/linkedin.png")}
+                    alt="Headshot"
+                  />
+                  Linkedin
+                </a>
+              </p>
             </div>
           </div>
 
@@ -513,6 +688,22 @@ function HomeScreen() {
               <p className="work_title">2. Markanyx Solutions Inc.</p>
               <p>Junior LMS Analyst</p>
               <p>January 2024 - June 2024</p>
+              <p>
+                <a
+                  href={
+                    "https://www.linkedin.com/company/markanyx/posts/?feedView=all"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/linkedin.png")}
+                    alt="Headshot"
+                  />
+                  Linkedin
+                </a>
+              </p>
             </div>
           </div>
 
@@ -566,6 +757,22 @@ function HomeScreen() {
               <p className="work_title">3. Romnica LTD.</p>
               <p>Lead Software Developer</p>
               <p>May 2023 - December 2023</p>
+              <p>
+                <a
+                  href={
+                    "https://www.linkedin.com/company/romnica-ltd/posts/?feedView=all"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="icon_text"
+                    src={require("../icons/linkedin.png")}
+                    alt="Headshot"
+                  />
+                  Linkedin
+                </a>
+              </p>
             </div>
           </div>
 
