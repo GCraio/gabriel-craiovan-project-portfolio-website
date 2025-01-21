@@ -1,26 +1,46 @@
 import React from "react";
 import "../styles/styles.css";
-import { useNavigate } from "react-router-dom";
 
 function HomeScreen() {
-  const navigate = useNavigate();
+  const handleScrollTo = (sectionClassName) => {
+    const section = document.querySelector(`.${sectionClassName}`);
+    if (section) {
+      const yOffset = -40;
+      const yPosition =
+        section.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      window.scrollTo({
+        top: yPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <main className="home_screen">
       <header className="home_header_container">
         <div>
-          <button className="initial_button" onClick={() => navigate("*")}>
+          <button
+            className="initial_button"
+            onClick={() => handleScrollTo("intro_section_container")}
+          >
+            About
+          </button>
+          <button
+            className="initial_button"
+            onClick={() => handleScrollTo("project_experiences_section")}
+          >
             Project Portfolio
           </button>
           <button
             className="initial_button"
-            onClick={() => navigate("/work-experiences")}
+            onClick={() => handleScrollTo("work_experiences_section")}
           >
             Work Experiences
           </button>
         </div>
       </header>
       <p className="intro_main_text">Hello! Welcome to my portfolio website!</p>
-      <section className="work_experiences_section">
+      <section className="intro_section_container">
         <p className="main_title">ABOUT ME</p>
         <article className="experience">
           <div className="experience_header_info">
@@ -105,7 +125,7 @@ function HomeScreen() {
         </article>
       </section>
 
-      <section className="work_experiences_section">
+      <section className="project_experiences_section">
         <p className="main_title">PROJECTS</p>
 
         <article className="experience">
