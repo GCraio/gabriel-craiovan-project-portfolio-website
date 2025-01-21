@@ -1,0 +1,102 @@
+/* Variables for color palettes */
+:root {
+  --0-color: #1d1616; /* Dark background */
+  --1-color: #8e1616; /* Primary red */
+  --2-color: #d84040; /* Accent red */
+  --3-color: #eeeeee; /* Light grey */
+  --4-color: #4caf50; /* Green */
+  --5-color: #87cefa; /* Light blue */
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: var(--0-color);
+  color: var(--3-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--5-color);
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul.technical_description {
+  margin: 10px 0 20px;
+  padding-left: 20px;
+}
+
+ul.technical_description li {
+  margin-bottom: 10px;
+}
+
+/* Section styles */
+.intro_section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro_section p {
+  font-size: 18px;
+}
+
+.work_experiences_section {
+  background-color: var(--1-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.work_experiences_section h1 {
+  text-align: center;
+}
+
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.HomeScreen_main_image {
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+  border: 3px solid var(--0-color);
+  border-radius: 10px;
+}
+
