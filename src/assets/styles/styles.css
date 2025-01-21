@@ -10,7 +10,6 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  line-height: 1.6;
   background-color: var(--3-color);
   color: var(--0-color);
 }
@@ -21,25 +20,23 @@ main {
   padding: 20px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: var(--0-color);
-  margin-bottom: 5px;
-}
-
 p {
+  color: var(--0-color);
   margin: 10px 0;
 }
 
+.work_title {
+  font-size: 25px;
+  font-weight: bold;
+  justify-self: flex-start;
+}
+
 ul.technical_description {
-  margin: 10px 0 20px;
   padding-left: 20px;
 }
 
 ul.technical_description li {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 /* Section styles */
@@ -59,46 +56,49 @@ ul.technical_description li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--0-color);
   width: 100%;
-}
-
-.work_experiences_section h1 {
-  text-align: center;
+  margin-top: 20px;
 }
 
 .experience {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   background-color: var(--2-color);
   border: 2px solid var(--0-color);
+}
+
+.main_title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.experience_section_text {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .experience_description_container {
   border: 1px solid var(--1-color);
   border-radius: 8px;
   padding: 8px;
-  border: 2px solid var(--1-color);
+  border: 2px solid var(--0-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.experience img {
+/* .experience img {
   width: 100%;
   max-width: 300px;
   margin: 10px 0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
   main {
     padding: 10px;
   }
-
-  h1 {
-    font-size: 28px;
-  }
-
   p {
     font-size: 16px;
   }
@@ -110,6 +110,27 @@ ul.technical_description li {
   object-fit: cover;
   border: 2px solid var(--0-color);
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.HomeScreen_work_image {
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+  border: 2px solid var(--0-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  align-self: center;
+}
+
+.experience_header_info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.experience_header_info_text_conatiner {
+  margin-left: 20px;
 }
 
 .home_header_container {
@@ -148,6 +169,7 @@ ul.technical_description li {
   border-radius: 8px;
   padding: 8px;
   background: var(--2-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   p {
     margin-top: 8px;

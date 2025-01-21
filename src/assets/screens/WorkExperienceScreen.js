@@ -3,9 +3,9 @@ import "../styles/styles.css";
 
 function WorkExperienceScreen() {
   return (
-    <main className="HomeScreen_main_container">
+    <main>
       <section className="intro_section">
-        <h1>Hello!</h1>
+        <p>Hello! Welcome to my portfolio website!</p>
         <p>
           I'm a Software Engineering student at the University of Calgary and
           the founder of <strong>Romdova LTD</strong>. I'm passionate about
@@ -20,20 +20,25 @@ function WorkExperienceScreen() {
       </section>
 
       <section className="work_experiences_section">
-        <h1>Work Experiences</h1>
+        <p className="main_title">WORK EXPERIENCES</p>
 
         <article className="experience">
           {/* FIRST EXPERIENCE */}
-          <h2>1. Romdova LTD.</h2>
-          <h3>Founder</h3>
-          <h3>July 2024 - Present </h3>
-          <img
-            className="HomeScreen_main_image"
-            src={require("../images/Romdova Logo.png")}
-            alt="Romdova Logo"
-          />
+          <div className="experience_header_info">
+            <img
+              className="HomeScreen_work_image"
+              src={require("../images/Romdova Logo.png")}
+              alt="Romdova Logo"
+            />
+            <div className="experience_header_info_text_conatiner">
+              <p className="work_title">1. Romdova LTD.</p>
+              <p>Founder</p>
+              <p>July 2024 - Present </p>
+            </div>
+          </div>
+
           <div className="experience_description_container">
-            <h4>Description:</h4>
+            <p className="experience_section_text">DESCRIPTION</p>
             <p>
               NEED TO UPDATE I lead the development of innovative software
               solutions for various applications. My mission is to deliver
@@ -41,7 +46,7 @@ function WorkExperienceScreen() {
               everyday experiences.
             </p>
 
-            <h4>Technical Work Description:</h4>
+            <p className="experience_section_text">TECHNICAL WORK DESCRIPTION</p>
             <ul className="technical_description">
               <li>
                 Established a legal Canadian startup independently, managing all
@@ -69,16 +74,21 @@ function WorkExperienceScreen() {
         </article>
         <article className="experience">
           {/* SECOND EXPERIENCE */}
-          <h2>2. Markanyx Solutions Inc.</h2>
-          <h3>Junior LMS Analyst</h3>
-          <h3>January 2024 - June 2024</h3>
-          <img
-            className="HomeScreen_main_image"
-            src={require("../images/markanyx-logo.png")}
-            alt="Romdova Logo"
-          />
+          <div className="experience_header_info">
+            <img
+              className="HomeScreen_work_image"
+              src={require("../images/markanyx-logo.png")}
+              alt="Romdova Logo"
+            />
+            <div className="experience_header_info_text_conatiner">
+              <p className="work_title">2. Markanyx Solutions Inc.</p>
+              <p>Junior LMS Analyst</p>
+              <p>January 2024 - June 2024</p>
+            </div>
+          </div>
+
           <div className="experience_description_container">
-            <h4>Description:</h4>
+            <p className="experience_section_text">DESCRIPTION</p>
             <p>
               NEED TO UPDATE I worked as a Junior Learning Management System
               (LMS) Analyst at Markanyx Solutions Inc. I was responsible for
@@ -86,7 +96,7 @@ function WorkExperienceScreen() {
               courses, and providing technical support to users.
             </p>
 
-            <h4>Technical Work Description:</h4>
+            <p className="experience_section_text">TECHNICAL WORK DESCRIPTION</p>
             <ul className="technical_description">
               <li>
                 Developed and enhanced client-requested features and resolved
@@ -115,16 +125,21 @@ function WorkExperienceScreen() {
         </article>
         <article className="experience">
           {/* Third EXPERIENCE */}
-          <h2>3. Romnica LTD.</h2>
-          <h3>Lead Software Developer</h3>
-          <h3>May 2023 - December 2023</h3>
-          <img
-            className="HomeScreen_main_image"
-            src={require("../images/Romnica.jpeg")}
-            alt="Romdova Logo"
-          />
+          <div className="experience_header_info">
+            <img
+              className="HomeScreen_work_image"
+              src={require("../images/Romnica.jpeg")}
+              alt="Romdova Logo"
+            />
+            <div className="experience_header_info_text_conatiner">
+              <p className="work_title">3. Romnica LTD.</p>
+              <p>Lead Software Developer</p>
+              <p>May 2023 - December 2023</p>
+            </div>
+          </div>
+
           <div className="experience_description_container">
-            <h4>Description:</h4>
+            <p className="experience_section_text">DESCRIPTION</p>
             <p>
               NEED TO UPDATE I worked as a Lead Software Developer at Romnica
               LTD. I led a team of software engineers in designing and building
@@ -132,7 +147,7 @@ function WorkExperienceScreen() {
               stores.
             </p>
 
-            <h4>Technical Work Description:</h4>
+            <p className="experience_section_text">TECHNICAL WORK DESCRIPTION</p>
             <ul className="technical_description">
               <li>
                 Led a team of software engineers in designing and building a
