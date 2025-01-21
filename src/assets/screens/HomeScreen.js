@@ -1,9 +1,24 @@
 import React from "react";
 import "../styles/styles.css";
+import { useNavigate } from "react-router-dom";
 
 function HomeScreen() {
+  const navigate = useNavigate();
   return (
-    <main>
+    <main className="home_screen">
+      <header className="home_header_container">
+        <div>
+          <button className="initial_button" onClick={() => navigate("*")}>
+            Project Portfolio
+          </button>
+          <button
+            className="initial_button"
+            onClick={() => navigate("/work-experiences")}
+          >
+            Work Experiences
+          </button>
+        </div>
+      </header>
       <section className="intro_section">
         <p>Hello! Welcome to my portfolio website!</p>
         <p>
