@@ -24,7 +24,9 @@ function HomeScreen() {
             src={require("../images/headshot.JPG")}
             alt="Headshot"
           />
-          <p style={{ fontWeight: "bold", fontSize: "20px", color: "white" }}>Gabriel Craiovan | Romdova LTD.</p>
+          <p style={{ fontWeight: "bold", fontSize: "20px", color: "white" }}>
+            Gabriel Craiovan | Romdova LTD.
+          </p>
         </div>
         <div style={{ marginRight: "5px" }}>
           <button
@@ -47,7 +49,7 @@ function HomeScreen() {
           </button>
         </div>
       </header>
-      <p className="intro_main_text">Hello! Welcome to my portfolio website!</p>
+      <p className="intro_main_text">Hello, and welcome to my portfolio!</p>
       <section className="intro_section_container">
         <p className="main_title">ABOUT ME</p>
         <article className="experience">
@@ -60,20 +62,25 @@ function HomeScreen() {
             <div className="experience_header_info_text_conatiner">
               <p className="work_title">Gabriel Craiovan</p>
               <p>
-                I'm a Software Engineering student at the University of Calgary
-                and the founder of <strong>Romdova LTD</strong>. I'm passionate
-                about creating innovative software solutions that solve
-                real-world problems and leave a meaningful impact.
+                I am a Software Engineering student at the University of Calgary
+                and the founder of <strong>Romdova LTD</strong>. My passion lies
+                in creating innovative software solutions that address
+                real-world challenges and make a meaningful impact on people’s
+                lives.
               </p>
               <p className="work_title">Contact</p>
               <p>
-                {" "}
                 <img
                   className="icon_text"
                   src={require("../icons/envelope.png")}
-                  alt="Headshot"
+                  alt="Email Icon"
                 />
-                gabriel.const.craiovan@gmail.com
+                <a
+                  href="mailto:gabriel.const.craiovan@gmail.com"
+                  className="email_link"
+                >
+                  gabriel.const.craiovan@gmail.com
+                </a>
               </p>
               <p>
                 {" "}
@@ -186,9 +193,11 @@ function HomeScreen() {
           <div className="experience_description_container">
             <p className="experience_section_text">DESCRIPTION</p>
             <p>
-              StudentSphere is a cross platform mobile application, designed to
-              connect students across canada through events. Users can
-              create/join events from other students at their university!
+              StudentSphere is a cross-platform mobile application designed to
+              connect students across Canada through shared events. The app
+              enables users to create and join events hosted by fellow students
+              at their university, fostering stronger connections within
+              academic communities.
             </p>
 
             <p className="experience_section_text">
@@ -312,10 +321,11 @@ function HomeScreen() {
           <div className="experience_description_container">
             <p className="experience_section_text">DESCRIPTION</p>
             <p>
-              RoPro is a cross-platform mobile application, designed to
-              introduce construction framers with a software tool help
-              automation window and door installation by generating a shareable
-              and accurate cut-list.
+              RoPro is a cross-platform mobile application tailored for
+              construction framers. It streamlines window and door installation
+              by automating the generation of accurate and shareable cut-lists.
+              RoPro serves as a practical software tool that enhances efficiency
+              and collaboration in construction projects.
             </p>
 
             <p className="experience_section_text">
@@ -424,13 +434,12 @@ function HomeScreen() {
           <div className="experience_description_container">
             <p className="experience_section_text">DESCRIPTION</p>
             <p>
-              Snipr-Buzz is a web application designed for users to search for
-              the best barbers in their city, and where barbers/hairstylist can
-              create profiles for users to find them. Barbers can upload photos
-              of work, display their services, reviews, social media links, and
-              booking information. Snipr-Buzz is a platform to streamline
-              connecting barbers to clients, and make clients feel confident in
-              choosing their barber.
+              Snipr-Buzz is a web application that connects users with the best
+              barbers in their city. Barbers and hairstylists can create
+              profiles to showcase their work, including photo portfolios,
+              services, reviews, social media links, and booking details.
+              Snipr-Buzz simplifies the process of finding and booking trusted
+              barbers, empowering clients to make confident choices.
             </p>
 
             <p className="experience_section_text">
@@ -552,12 +561,12 @@ function HomeScreen() {
           <div className="experience_description_container">
             <p className="experience_section_text">DESCRIPTION</p>
             <p>
-              The ChatGPT AI ChatBot Messenger mobile application was designed
-              to showcase my ability to integrate an Learning Language Model
-              within an application for a practical use. Users can have
-              converstations with various bots in different chat rooms topics,
-              have their conversations saved locally, and interact with the
-              robots with speech.
+              The ChatGPT AI ChatBot Messenger mobile application demonstrates
+              my ability to integrate a cutting-edge language model into a
+              practical platform. Users can engage in conversations with
+              AI-powered bots across various chat room topics, save their
+              conversations locally, and interact with the bots using voice
+              commands, creating a dynamic and immersive user experience.
             </p>
 
             <p className="experience_section_text">
@@ -670,10 +679,10 @@ function HomeScreen() {
           <div className="experience_description_container">
             <p className="experience_section_text">DESCRIPTION</p>
             <p>
-              NEED TO UPDATE I lead the development of innovative software
-              solutions for various applications. My mission is to deliver
-              high-quality software that solves real-world problems and enhances
-              everyday experiences.
+              I lead the development of innovative software solutions for
+              various applications. My mission is to deliver high-quality
+              software that solves real-world problems and enhances everyday
+              experiences.
             </p>
 
             <p className="experience_section_text">
@@ -738,10 +747,10 @@ function HomeScreen() {
           <div className="experience_description_container">
             <p className="experience_section_text">DESCRIPTION</p>
             <p>
-              NEED TO UPDATE I worked as a Junior Learning Management System
-              (LMS) Analyst at Markanyx Solutions Inc. I was responsible for
-              managing the LMS platform, creating and maintaining online
-              courses, and providing technical support to users.
+              During my role as a Junior Learning Management System (LMS)
+              Analyst at Markanyx Solutions Inc., I managed the LMS platform,
+              developed new features, and resolved bugs. My contributions
+              enhanced the platform’s functionality and user experience.
             </p>
 
             <p className="experience_section_text">
@@ -807,10 +816,11 @@ function HomeScreen() {
           <div className="experience_description_container">
             <p className="experience_section_text">DESCRIPTION</p>
             <p>
-              NEED TO UPDATE I worked as a Lead Software Developer at Romnica
-              LTD. I led a team of software engineers in designing and building
-              a cross-platform mobile app, RoPro, from concept to release on app
-              stores.
+              As the Lead Software Developer at Romnica LTD, I lead a team of
+              software engineers in designing and developing RoPro, a
+              cross-platform mobile application. From concept to app store
+              release, I ensured the project adhered to high standards of
+              quality and innovation.
             </p>
 
             <p className="experience_section_text">
