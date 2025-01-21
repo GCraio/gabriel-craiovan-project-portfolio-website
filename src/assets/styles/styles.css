@@ -100,3 +100,54 @@ ul.technical_description li {
   border-radius: 10px;
 }
 
+.home_header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--2-color);
+}
+
+.initial_button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--1-color);
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.initial_button:hover {
+  background-color: var(--0-color);
+  color: white;
+}
+
+.image_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+.image_container {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  background: #f9f9f9;
+
+  p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+  }
+}
+
+.uploaded_image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
