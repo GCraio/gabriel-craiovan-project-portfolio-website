@@ -5,7 +5,7 @@ function HomeScreen() {
   const handleScrollTo = (sectionClassName) => {
     const section = document.querySelector(`.${sectionClassName}`);
     if (section) {
-      const yOffset = -40;
+      const yOffset = -50;
       const yPosition =
         section.getBoundingClientRect().top + window.scrollY + yOffset;
 
@@ -18,7 +18,15 @@ function HomeScreen() {
   return (
     <main className="home_screen">
       <header className="home_header_container">
-        <div>
+        <div className="header_display_name">
+          <img
+            className="header_image"
+            src={require("../images/headshot.JPG")}
+            alt="Headshot"
+          />
+          <p style={{ fontWeight: "bold", fontSize: "20px", color: "white" }}>Gabriel Craiovan | Romdova LTD.</p>
+        </div>
+        <div style={{ marginRight: "5px" }}>
           <button
             className="initial_button"
             onClick={() => handleScrollTo("intro_section_container")}
